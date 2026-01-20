@@ -88,13 +88,13 @@ A guided reflection for the end of a work session. Surfaces what you learned (te
 
 ```bash
 # Clone the repo
-git clone https://github.com/madebynoam/claude-skills-for-designers.git
+git clone https://github.com/madebynoam/dcode.git
 
 # Copy skills
-cp -r claude-skills-for-designers/skills/* ~/.claude/skills/
+cp -r dcode/skills/* ~/.claude/skills/
 
 # Copy commands
-cp -r claude-skills-for-designers/commands/* ~/.claude/commands/
+cp -r dcode/commands/* ~/.claude/commands/
 ```
 
 ### Option 2: Reference directly
