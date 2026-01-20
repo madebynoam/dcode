@@ -137,7 +137,7 @@ dcode/
 
 ## About
 
-Created by [Noam Almosnino](https://noamalmos.com), a designer at [Automattic](https://automattic.com) exploring how AI tools can make codebases more accessible to designers.
+Created by [Noam Almosnino](https://noamalmos.com), design lead at [Automattic](https://automattic.com) exploring how AI tools can make codebases more accessible to designers.
 
 These skills grew out of real daily work—navigating a large React codebase, making design changes, and reflecting on what worked. They're functional prototypes: code-based artifacts that define agentic workflows.
 
