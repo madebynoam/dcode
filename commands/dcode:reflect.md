@@ -7,6 +7,6 @@ arguments:
     required: false
 ---
 
-Use the dcode:session-reflect skill to guide a reflection on this session.
+Use the dcode:reflect-session skill to guide a reflection on this session.
 
 Session name: $ARGUMENTS

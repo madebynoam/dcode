@@ -1,9 +1,9 @@
 ---
-name: dcode:component-detective
+name: dcode:find-component
 description: Find UI components from screenshots, route paths, or component names. Use when a designer asks "where does this live?", shares a screenshot and wants to find the code, needs to locate a component by its visual appearance, or wants to understand how a UI element is built. Works with React, Vue, Angular, and other component-based frameworks.
 ---
 
-# Component Detective
+# Find Component
 
 Find where UI components live in a codebase—from screenshots, routes, or names.
 

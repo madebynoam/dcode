@@ -7,6 +7,6 @@ arguments:
     required: true
 ---
 
-Use the dcode:component-detective skill to find the component.
+Use the dcode:find-component skill to find the component.
 
 Target: $ARGUMENTS

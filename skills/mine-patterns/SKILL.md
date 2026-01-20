@@ -1,9 +1,9 @@
 ---
-name: dcode:workflow-mining
+name: dcode:mine-patterns
 description: Analyze a work session to identify repeatable patterns that could become reusable skills or commands. Use at the end of a productive session to capture workflows worth automating, when noticing repetitive multi-step tasks, or when wanting to improve personal productivity with Claude Code.
 ---
 
-# Workflow Mining
+# Mine Patterns
 
 Turn productive sessions into reusable skills.
 

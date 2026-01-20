@@ -23,7 +23,7 @@ Most Claude Code skills assume you're a developer. These are different—they're
 
 ## Skills
 
-### dcode:component-detective
+### dcode:find-component
 **Find UI components from screenshots, route paths, or component names.**
 
 The core designer superpower: "I see this button in the app... where's the code?" Give it a screenshot, and it finds the component. Works with React, Vue, Angular, and other component-based frameworks.
@@ -36,14 +36,14 @@ The core designer superpower: "I see this button in the app... where's the code?
 
 **Command:** `/dcode:find <target>`
 
-### dcode:workflow-mining
+### dcode:mine-patterns
 **Turn productive sessions into reusable skills.**
 
 At the end of a session, this skill analyzes what you did and suggests patterns worth automating. It's how these skills were born—and how you'll create your own.
 
 **Command:** `/dcode:mine`
 
-### dcode:session-reflect
+### dcode:reflect-session
 **Capture learnings before they fade.**
 
 A guided reflection for the end of a work session. Surfaces what you learned (technical and soft skills), how you feel, and creates a searchable record of growth over time.
@@ -69,7 +69,7 @@ cp -r claude-skills-for-designers/commands/* ~/.claude/commands/
 
 Just mention the skill by name in your prompt:
 ```
-"Use dcode:component-detective to find where this screenshot lives"
+"Use dcode:find-component to find where this screenshot lives"
 ```
 
 ## Repository Structure
@@ -77,9 +77,9 @@ Just mention the skill by name in your prompt:
 ```
 dcode/
 ├── skills/
-│   ├── component-detective/SKILL.md    # Find components from visuals
-│   ├── workflow-mining/SKILL.md        # Surface reusable patterns
-│   └── session-reflect/SKILL.md        # Capture learnings
+│   ├── find-component/SKILL.md     # Find components from visuals
+│   ├── mine-patterns/SKILL.md      # Surface reusable patterns
+│   └── reflect-session/SKILL.md    # Capture learnings
 ├── commands/
 │   ├── dcode:find.md                   # /dcode:find shortcut
 │   ├── dcode:mine.md                   # /dcode:mine shortcut
@@ -96,10 +96,10 @@ dcode/
 
 ## Coming Soon
 
-- **dcode:visual-tweak** — Safe CSS changes with preview and easy revert
-- **dcode:token-explorer** — Map the design system actually in use
-- **dcode:feasibility** — "Can we build this?" analysis before designing
-- **dcode:inconsistency** — Audit for design debt across a codebase
+- **dcode:tweak-visuals** — Safe CSS changes with preview and easy revert
+- **dcode:explore-tokens** — Map the design system actually in use
+- **dcode:check-feasibility** — "Can we build this?" analysis before designing
+- **dcode:audit-consistency** — Audit for design debt across a codebase
 
 ## About
 
