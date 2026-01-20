@@ -1,5 +1,5 @@
 ---
-name: session-reflect
+name: dcode:session-reflect
 description: Guide an end-of-session reflection to capture learnings and feelings. Use when finishing a work session, after completing a challenging task, when wanting to consolidate what was learned, or to build a personal learning log over time.
 ---
 

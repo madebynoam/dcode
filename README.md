@@ -1,87 +1,111 @@
-# Claude Skills for Designers
+# dcode: Claude Skills for Designers
 
 **A toolkit for designers who work in code but don't live there.**
 
-Most Claude Code skills assume you're a developer. These skills are different—they're designed for the designer's journey through a codebase: finding components, understanding design systems, making safe visual changes, and prototyping in real code without fear.
+`dcode` = design + code. These skills bridge the gap between "I have Figma" and "I need to ship this."
 
-## Why This Exists
+Most Claude Code skills assume you're a developer. These are different—they're designed for the designer's journey through a codebase: finding components, understanding design systems, making safe visual changes, and prototyping without fear.
 
-Designers increasingly need to work directly in code, but codebases are intimidating. These skills bridge the gap between "I have Figma" and "I need to ship this."
+## Quick Start
 
-**Built for designers who:**
-- Want to find where a component lives without grep wizardry
-- Need to make a CSS tweak without breaking production
-- Prototype new screens following existing patterns
-- Audit design consistency across a codebase
-- Feel confident navigating code, not just reading it
+```bash
+# Find where a component lives
+/dcode:find screenshot.png
+/dcode:find "settings/profile"
+/dcode:find "UserCard"
+
+# Analyze session for reusable patterns
+/dcode:mine
+
+# End-of-session reflection
+/dcode:reflect
+```
 
 ## Skills
 
-### [component-detective](./skills/component-detective/)
+### dcode:component-detective
 **Find UI components from screenshots, route paths, or component names.**
 
 The core designer superpower: "I see this button in the app... where's the code?" Give it a screenshot, and it finds the component. Works with React, Vue, Angular, and other component-based frameworks.
 
-```
-Input:  Screenshot of a pricing card
-Output: PricingCard component location, styles, related files
-```
+| Input | Output |
+|-------|--------|
+| Screenshot of a pricing card | `PricingCard` component location, styles, related files |
+| `settings/profile` | Files for the profile settings page |
+| `DatePicker` | Component definition, usage examples, styles |
 
-### [workflow-mining](./skills/workflow-mining/)
+**Command:** `/dcode:find <target>`
+
+### dcode:workflow-mining
 **Turn productive sessions into reusable skills.**
 
 At the end of a session, this skill analyzes what you did and suggests patterns worth automating. It's how these skills were born—and how you'll create your own.
 
-```
-Input:  "What patterns did I use today?"
-Output: Suggested skills with value assessment and build complexity
-```
+**Command:** `/dcode:mine`
 
-### [session-reflect](./skills/session-reflect/)
+### dcode:session-reflect
 **Capture learnings before they fade.**
 
 A guided reflection for the end of a work session. Surfaces what you learned (technical and soft skills), how you feel, and creates a searchable record of growth over time.
 
-```
-Input:  End of a challenging session
-Output: Structured reflection with learnings, feelings, and context
-```
+**Command:** `/dcode:reflect [session-name]`
 
 ## Installation
 
-These skills work with [Claude Code](https://claude.ai/code). To use them:
+### Option 1: Copy to your Claude config
 
-1. Clone this repo or download individual skill folders
-2. Copy skills to `~/.claude/skills/`
-3. Skills activate automatically when relevant
-
-Or reference them directly:
 ```bash
-# In Claude Code
-"Use the component-detective skill to find where this screenshot lives"
+# Clone the repo
+git clone https://github.com/madebynoam/claude-skills-for-designers.git
+
+# Copy skills
+cp -r claude-skills-for-designers/skills/* ~/.claude/skills/
+
+# Copy commands
+cp -r claude-skills-for-designers/commands/* ~/.claude/commands/
+```
+
+### Option 2: Reference directly
+
+Just mention the skill by name in your prompt:
+```
+"Use dcode:component-detective to find where this screenshot lives"
+```
+
+## Repository Structure
+
+```
+dcode/
+├── skills/
+│   ├── component-detective/SKILL.md    # Find components from visuals
+│   ├── workflow-mining/SKILL.md        # Surface reusable patterns
+│   └── session-reflect/SKILL.md        # Capture learnings
+├── commands/
+│   ├── dcode:find.md                   # /dcode:find shortcut
+│   ├── dcode:mine.md                   # /dcode:mine shortcut
+│   └── dcode:reflect.md                # /dcode:reflect shortcut
+└── README.md
 ```
 
 ## Philosophy
 
-These skills embody a few principles:
-
 1. **Reduce fear, increase confidence** — Codebases shouldn't be scary for designers
-2. **Progressive disclosure** — Start simple, reveal complexity only when needed
-3. **Screenshot-first** — Visual input is a designer's native language
+2. **Screenshot-first** — Visual input is a designer's native language
+3. **Progressive disclosure** — Start simple, reveal complexity only when needed
 4. **Learning loops** — Reflection builds lasting skills, not just task completion
 
 ## Coming Soon
 
-- **visual-tweak** — Safe CSS changes with preview and easy revert
-- **design-token-explorer** — Map the design system actually in use
-- **feasibility-check** — "Can we build this?" analysis before designing
-- **inconsistency-finder** — Audit for design debt across a codebase
+- **dcode:visual-tweak** — Safe CSS changes with preview and easy revert
+- **dcode:token-explorer** — Map the design system actually in use
+- **dcode:feasibility** — "Can we build this?" analysis before designing
+- **dcode:inconsistency** — Audit for design debt across a codebase
 
 ## About
 
 Created by [Noam Almosnino](https://noamalmos.com), a designer at Automattic exploring how AI tools can make codebases more accessible to designers.
 
-These skills grew out of real daily work—navigating a large React codebase, making design changes, and reflecting on what worked. They're functional prototypes: code-based artifacts that define agentic workflows for Claude Code.
+These skills grew out of real daily work—navigating a large React codebase, making design changes, and reflecting on what worked. They're functional prototypes: code-based artifacts that define agentic workflows.
 
 ---
 
