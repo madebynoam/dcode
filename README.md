@@ -166,13 +166,6 @@ dcode/
 3. **Progressive disclosure** — Start simple, reveal complexity only when needed
 4. **Learning loops** — Reflection builds lasting skills, not just task completion
 
-## Coming Soon
-
-- **dcode:tweak-visuals** — Safe CSS changes with preview and easy revert
-- **dcode:explore-tokens** — Map the design system actually in use
-- **dcode:check-feasibility** — "Can we build this?" analysis before designing
-- **dcode:audit-consistency** — Audit for design debt across a codebase
-
 ## About
 
 Created by [Noam Almosnino](https://noamalmos.com), design lead at [Automattic](https://automattic.com).
